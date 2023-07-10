@@ -15,3 +15,8 @@ class ContaPagar(models.Model):
 class ContaPaga(models.Model):
     conta = models.ForeignKey(ContaPagar, on_delete=models.DO_NOTHING)
     data_pagamento = models.DateField()
+    
+    # def __str__(self):
+    #     return self.conta
+    
+    
